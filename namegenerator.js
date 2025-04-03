@@ -1,3 +1,4 @@
+
 function final_name() {
     console.log(`${first_name()} ${second_name()} ${third_name()}`)
 }
@@ -49,4 +50,3 @@ function third_name() {
         return others3;
     }
 }
-final_name()

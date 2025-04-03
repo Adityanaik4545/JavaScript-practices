@@ -1,3 +1,4 @@
+
 let random=Math.random()
 console.log(random);
 let num1=parseFloat(prompt("enter the number"));

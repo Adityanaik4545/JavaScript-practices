@@ -11,4 +11,3 @@ function fact(n) {
     console.log(arr)
 console.log(result)
 }
-fact(num)
