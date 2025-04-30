@@ -6,7 +6,7 @@ async function addItems(item) {
 }
 
 async function startHacking() {
-    setInterval(()=>{
+   let t= setInterval(()=>{
         let last=document.body.lastElementChild;
         if (last.innerHTML.endsWith("...")) {
             last.innerHTML=last.innerHTML.slice(0,last.innerHTML.length-3)
@@ -26,7 +26,8 @@ async function startHacking() {
     for(let item of text){
         await addItems(item);
     }
-    
+    await delay()
+    clearInterval(t);
 }
 startHacking()
 function delay() {
